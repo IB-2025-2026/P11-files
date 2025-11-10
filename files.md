@@ -44,7 +44,7 @@ sustituyendo el nombre del fichero `.deb` por el del que Ud. haya descargado. Un
 ```
 code .
 ```
-En el comando anterior el punto indica que desea Ud. editar ficheros en el directorio actual (`.`). Cuando desee salir del programa, utilice el comando del menú *File $\rightarrow$ Exit*. Siga a continuación las instrucciones de la página [Remote Development using SSH](https://code.visualstudio.com/docs/remote/ssh) para configurar la edición remota usando VSC:
+En el comando anterior el punto indica que desea Ud. editar ficheros en el directorio actual (`.`). Cuando desee salir del programa, utilice el comando del menú *File*$\rightarrow$*Exit*. Siga a continuación las instrucciones de la página [Remote Development using SSH](https://code.visualstudio.com/docs/remote/ssh) para configurar la edición remota usando VSC:
 
 - Realice sólo el paso 3 del apartado *Installation*, puesto que ya tiene Ud. instalado un cliente de SSH (el comando `ssh`, tanto en la máquina virtual como en su máquina de trabajo) y Visual Studio Code (usando el fichero `.deb` que descargó previamente). Instale el paquete correspondiente a la extensión *Remote Development extension pack*. Si sigue el enlace [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) le llevará a una página en la que le indica el comando que ha de teclear en VSC (`Ctrl+P`) para instalar la extensión.
 
@@ -56,7 +56,7 @@ En el comando anterior el punto indica que desea Ud. editar ficheros en el direc
     $ ssh-copy-id -i "$PUBKEYPATH" "$USER_AT_HOST"
     ```
 
-- Por último, siga los pasos del apartado *Connect to a remote host* para realizar la conexión a su máquina virtual. [Este vídeo](https://youtu.be/pAUfwae-eWg) ilustra cómo configurar la edición remota de ficheros alojados en máquinas IaaS-ULL usando VSC. Cuando haya terminado de trabajar, puede cerrar la conexión a través de *File $\rightarrow$ Close Remote Connection.*
+- Por último, siga los pasos del apartado *Connect to a remote host* para realizar la conexión a su máquina virtual. [Este vídeo](https://youtu.be/pAUfwae-eWg) ilustra cómo configurar la edición remota de ficheros alojados en máquinas IaaS-ULL usando VSC. Cuando haya terminado de trabajar, puede cerrar la conexión a través de *File*$\rightarrow$*Close Remote Connection.*
 
 Para terminar, siga las instrucciones de la página [C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp) para instalar la extensión para C/C++ en VSC. Puede comprobar que ya se dispone del compilador `g++` de GNU, que es el que se ha venido utilizando en *Informática Básica*. Conéctese a través de VSC con su máquina virtual y siga el tutorial *Create a Hello World App* que aparece en la página anterior, creando el subdirectorio `helloworld` en el directorio de la práctica. Recuerde que, siguiendo la guía de estilo de Google, el fichero de código debería terminar en `.cc`, no `.cpp`.
 
@@ -89,13 +89,10 @@ Para realizar pruebas con los siguientes ejercicios, puede utilizar el documento
     - `'u'` por `'a'`
     
     De este modo, un fichero de entrada que contuviera este texto:
-    ```
-    In an age when acronyms were popular, the Manchester Mark I was sometimes referred to as MADM (Manchester Automatic Digital Machine) or MUC (Manchester University Computer).
-    ```
+    > In an age when acronyms were popular, the Manchester Mark I was sometimes referred to as MADM (Manchester Automatic Digital Machine) or MUC (Manchester University Computer).
+    
     produciría como salida este otro:
-    ```
-    In en egi whin ecrunyms wiri pupaler, thi Menchistir Merk I wes sumitomis rifirrid tu es MADM (Menchistir Aatumetoc Dogotel Mechoni) ur MUC (Menchistir Unovirsoty Cumpatir).
-    ```
+    > In en egi whin ecrunyms wiri pupaler, thi Menchistir Merk I wes sumitomis rifirrid tu es MADM (Menchistir Aatumetoc Dogotel Mechoni) ur MUC (Menchistir Unovirsoty Cumpatir).
 
 3. Escriba un programa que lea un fichero de texto que se le pase como parámetro y produzca como salida ficheros con nombre `A.txt`, `B.txt`, ..., `Z.txt`. Cada uno de esos ficheros ha de contener, en líneas separadas, todas las palabras del fichero pasado como parámetro que comiencen por la correspondiente letra, mayúscula o minúscula.
 

@@ -29,7 +29,7 @@ Se comprobará que el alumnado:
 * Ha realizado todos sus ejercicios en la máquina virtual Ubuntu de la asignatura.
 * Demuestra que es capaz de ejecutar comandos Linux en su VM
 
-#### Visual Studio Code
+### Visual Studio Code
 Un [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (*Integrated development environment*, entorno integrado de desarrollo) es un programa que proporciona diversos servicios a un/a programador/a para facilitarle la tarea del desarrollo de programas. Los servicios más comunes que proporciona un IDE son un editor de código fuente (hasta ahora se ha usado vi), un compilador (se seguirá usando g++), herramientas de construcción automáticas (hasta ahora se ha utilizado `make`) y un depurador.
 
 La mayoría de los IDE tienen auto-completado inteligente de código (*IntelliSense*). Los IDE presentan un único programa en el que se lleva a cabo todo el desarrollo. Generalmente, este programa (IDE) suele ofrecer muchas funcionalidades para la creación, modificación, compilación, implementación y depuración de programas. Algunos IDE están orientados específicamente a un determinado lenguaje de programación, mientras que otros se pueden utilizar con diferentes lenguajes.
